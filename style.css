@@ -1,0 +1,121 @@
+:root {
+    --clr-dark-cyan: hsl(158, 36%, 37%);
+    --clr-cream: hsl(30, 38%, 92%);
+    --clr-very-dark-blue: hsl(212, 21%, 14%);
+    --clr-dark-grayis-blue: hsl(228, 12%, 48%);
+    --clr-white: hsl(0, 0%, 100%);
+    --p-font-size: 14px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: var(--clr-cream);
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    min-height: 600px;
+    border-radius: 15px;
+    background-color: var(--clr-white);
+}
+
+.preview {
+    width: 400px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.perfume {
+    padding: 40px;
+    height: 600px;
+}
+
+.perfume h3 {
+    color: var(--clr-dark-grayis-blue);
+    letter-spacing: 6px;
+}
+
+.perfume h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 2.6rem;
+    margin: 30px 0;
+}
+
+.perfume p {
+    color: var(--clr-dark-grayis-blue);
+    font-size: 1.2rem;
+    margin: 30px 0;
+}
+
+.perfume .price {
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.perfume .price h2 {
+    color: var(--clr-dark-cyan);
+    font-size: 2.2rem;
+    font-family: 'Fraunces', serif;
+    margin-right: 20px;
+}
+
+.perfume .price h6 {
+    color: var(--clr-dark-grayis-blue);
+    text-decoration: line-through;
+    font-size: 1.2rem;
+}
+
+.perfume .addtocard {
+    background-color: var(--clr-dark-cyan);
+    border: none;
+    width: 320px;
+    padding: 20px 0;
+    color: var(--clr-white);
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-family: 'Fraunces', serif;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.perfume .addtocard svg {
+    margin-right: 10px;
+}
+
+
+@media (max-width: 900px) {
+    .preview {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0px;
+    }
+    .card {
+        margin: 30px;
+        flex-direction: column;
+        padding: 0 30px;
+        width: 400px;
+    }
+    .perfume {
+        padding: 0;
+        margin-top: 20px;
+    }
+    .addtocard {
+        margin-bottom: 0px;
+        margin: 0;
+    }
+}
